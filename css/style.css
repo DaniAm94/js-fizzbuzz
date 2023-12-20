@@ -20,8 +20,9 @@ h1 {
     line-height: 100px;
     font-weight: bold;
     font-size: 1.2rem;
-    box-shadow: 5px 5px 10px black inset;
+    box-shadow: 0 0 25px black inset;
     border-radius: 50%;
+    border: 1px solid rgb(37, 37, 37);
 }
 
 .cell.fizz {
@@ -40,7 +41,7 @@ h1 {
 
 .cell.fizz-buzz {
     background-color: #dc143c;
-    animation-name: shine;
+    animation-name: overheating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
@@ -74,9 +75,9 @@ h1 {
 
 }
 
-@keyframes shine {
+@keyframes overheating {
     0% {
-        box-shadow: 5px 5px 10px black inset;
+        box-shadow: 0 0 15px black inset;
     }
 
     50% {
@@ -84,6 +85,6 @@ h1 {
     }
 
     100% {
-        box-shadow: 5px 5px 10px black inset;
+        box-shadow: 0 0 15px black inset;
     }
 }
