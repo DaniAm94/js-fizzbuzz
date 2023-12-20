@@ -43,6 +43,13 @@
                 sarà posizionata prima del ciclo for.
             - Preparo immediatamente la chiusura del tag 'ul'; posizionata dopo il ciclio for.
             - Inserisco la variabile all'interno dell'elemento HTML tramite proprietà 'innerHTML'.
-            - All'interno del ciclo: aggiorno di volta in volta la mia variabile aggiungendo ciò che sarà stampato (numero o stringa corrispettiva) avendo cura di racchiuderlo nel tag 'li'.
+            - All'interno del ciclo: aggiorno di volta in volta la mia variabile    aggiungendo ciò che sarà stampato (numero o stringa corrispettiva) avendo cura di racchiuderlo nel tag 'li'.
+        - `Opzione "manipolazioe del DOM"`:
+            - Creo un nodo list di tipo 'ul'
+            - All'interno del ciclo for: 
+                - all'inizio del ciclo creo un nodo listItem di tipo 'li'.
+                - alla fine del ciclio inserisco la variabile da stampare all'interno del listItem
+                - appendo il listItem all'elemento list
+            - Fuori dal ciclio for: appendo l'elemento list all'elemento contenitore
     - **Bonus 2**
         - a seguire...

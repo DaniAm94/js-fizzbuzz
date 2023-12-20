@@ -1,15 +1,16 @@
 // Recupero l'elemento HTML
 const container = document.querySelector('.container')
+const list = document.createElement('ul');
 
-// Inizializzo la variabile che conterrà tutta la stampa
-let list = '<ul class="list-unstyled d-flex flex-wrap gap-3">';
-
+list.classList.add('list-unstyled', 'd-flex', 'flex-wrap', 'gap-4');
 // Itero tutti i numeri da 1 a 100
 for (let i = 1; i <= 100; i++) {
 
     //Creo la variabile che contiene quello che verrà stampato
     // Caso banale: verra stampato il numero se questo non è divisibile ne per 3 ne per 5
     let stampa = i;
+
+    const listItem = document.createElement('li');
 
     //Controllo se è divisibile per 3
     if (!(i % 3)) {
@@ -29,13 +30,15 @@ for (let i = 1; i <= 100; i++) {
 
     // Stampa
     console.log(i, stampa);
-    // Aggiorno la lista
-    list += `<li>${stampa}</li>`
+
+    listItem.append(stampa);
+    list.appendChild(listItem);
 }
 
+container.appendChild(list);
 
-// Preparo la chiusura del tag ul
-list += '</ul>';
 
-// Inserisco la lista nell'elemento html
-container.innerHTML = list;
+
+
+
+
