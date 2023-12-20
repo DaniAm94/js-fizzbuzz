@@ -36,6 +36,13 @@
     3. Stampare il numero/ la stringa in console
 
     - **Bonus 1**
-        - a seguire...
+        - Creo un elemento contenitore nel file HTML (es div)
+        - Recupero l'elemento nel file js
+        - `Opzione 1` "template literal":
+            - Creo una variabile stringa che conterrà il tag di apertura di un 'ul';
+                sarà posizionata prima del ciclo for.
+            - Preparo immediatamente la chiusura del tag 'ul'; posizionata dopo il ciclio for.
+            - Inserisco la variabile all'interno dell'elemento HTML tramite proprietà 'innerHTML'.
+            - All'interno del ciclo: aggiorno di volta in volta la mia variabile aggiungendo ciò che sarà stampato (numero o stringa corrispettiva) avendo cura di racchiuderlo nel tag 'li'.
     - **Bonus 2**
         - a seguire...
