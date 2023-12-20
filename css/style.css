@@ -1,0 +1,35 @@
+/* Generics */
+
+body {
+    background-color: hsl(201.7deg 45.63% 20.2%);
+}
+
+h1 {
+    font-size: 5rem;
+    color: white;
+}
+
+
+/* Utils */
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: hsl(203.21deg 42.74% 48.63%);
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.cell.fizz {
+    background-color: darkviolet;
+}
+
+.cell.buzz {
+    background-color: rgb(255, 218, 11);
+}
+
+.cell.fizz-buzz {
+    background-color: crimson;
+}
