@@ -19,17 +19,71 @@ h1 {
     text-align: center;
     line-height: 100px;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px 10px black inset;
+    border-radius: 50%;
 }
 
 .cell.fizz {
     background-color: darkviolet;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 .cell.buzz {
     background-color: rgb(255, 218, 11);
+    animation-name: flip;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 .cell.fizz-buzz {
-    background-color: crimson;
+    background-color: #dc143c;
+    animation-name: shine;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 0.8;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: scaleX(1);
+    }
+
+    50% {
+        transform: scaleX(0)
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+
+}
+
+@keyframes shine {
+    0% {
+        box-shadow: 5px 5px 10px black inset;
+    }
+
+    50% {
+        box-shadow: 0 0 50px rgb(248, 252, 36) inset;
+    }
+
+    100% {
+        box-shadow: 5px 5px 10px black inset;
+    }
 }
