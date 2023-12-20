@@ -38,7 +38,7 @@
     - **Bonus 1**
         - Creo un elemento contenitore nel file HTML (es div)
         - Recupero l'elemento nel file js
-        - `Opzione 1` "template literal":
+        - `Opzione "template literal"`:
             - Creo una variabile stringa che conterrà il tag di apertura di un 'ul';
                 sarà posizionata prima del ciclo for.
             - Preparo immediatamente la chiusura del tag 'ul'; posizionata dopo il ciclio for.

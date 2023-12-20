@@ -1,3 +1,9 @@
+// Recupero l'elemento HTML
+const container = document.querySelector('.container')
+
+// Inizializzo la variabile che conterrà tutta la stampa
+let list = '<ul class="list-unstyled d-flex flex-wrap gap-3">';
+
 // Itero tutti i numeri da 1 a 100
 for (let i = 1; i <= 100; i++) {
 
@@ -23,4 +29,13 @@ for (let i = 1; i <= 100; i++) {
 
     // Stampa
     console.log(stampa);
+    // Aggiorno la lista
+    list += `<li>${stampa}</li>`
 }
+
+
+// Preparo la chiusura del tag ul
+list += '</ul>';
+
+// Inserisco la lista nell'elemento html
+container.innerHTML = list;
